@@ -1,15 +1,15 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import Navbar from './components/Navbar';
 import TextForm from './components/TextForm';
-import About from './components/About';
+// import About from './components/About';
 import Alert from './components/Alert';
 import { useState } from 'react';
 import {
   BrowserRouter as Router,
-  Switch,
+  // Switch,
   Route,
   Routes,
-  Link
+  // Link
 } from "react-router-dom";
 function App() {
   const [mode, setMode] = useState('light')
@@ -48,7 +48,7 @@ function App() {
       <Router>
         <Navbar title="Textutils" navclasshome="nav-link active" navclassabout="nav-link" navhome="Home" navabout="About us" mode={mode} toggleMode={toggleMode} toggle={togglename} />
         <Alert alert={alert} />
-        <div class="container">
+        <div className="container">
 
               <Routes>
 

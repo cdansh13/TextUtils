@@ -49,7 +49,7 @@ export default function TextForm(props) {
         <button className="btn btn-primary mx-2" onClick={Copy}>Copy Text</button>
         <button className="btn btn-primary mx-2" onClick={ClearText}>Clear Text</button>
     </div>
-    <div class="container  my-2" >
+    <div className="container  my-2" >
       <h2>Yout text summary</h2>
       <p>{Text.length>0?Text.split(" ").length:"0"} words</p>
       <p>{Text.trim().length } characters</p>
