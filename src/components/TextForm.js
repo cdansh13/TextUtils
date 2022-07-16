@@ -75,15 +75,15 @@ export default function TextForm(props) {
         </div>
         <button className="btn btn-primary mx-1 my-2" onClick={handleUpClick}>Convert to UpperCase</button>
         <button className="btn btn-primary mx-1 my-2 " onClick={handleLowClick}>Convert to LowerCase</button>
-        <button className="btn btn-primary mx-1 my-2" onClick={RemoveExtraSpace}>Remove Extra Space</button>
+        <button className="btn btn-primary mx-1 my-2" onClick={RemoveExtraSpace}>Remove Extra Spaces</button>
         <button className="btn btn-primary mx-1 my-2" onClick={Copy}>Copy Text</button>
         <button className="btn btn-primary mx-1 my-2" onClick={ClearText}>Clear Text</button>
     </div>
+    <hr />
     <div className="container  my-2" >
-      <h2>Yout text summary</h2>
       <p>{Text.length>0?Text.split(" ").length:"0"} words</p>
       <p>{Text.trim().length } characters</p>
-      <p>{Text.length>0?0.008*Text.split(" ").length:"0 " } minutes to read</p>
+      {/* <p>{Text.length>0?0.008*Text.split(" ").length:"0 " } minutes to read</p> */}
       <h3>Preview:</h3>
       <p>{Text.length>0?Text:"Nothing to preview!"}</p>
     </div>
